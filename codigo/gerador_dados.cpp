@@ -38,6 +38,9 @@ void salvarArquivo(const string& nomeArquivo, const vector<int>& vetor, int tama
       cerr << "Erro ao criar o arquivo " << nomeArquivo << endl;
       return;
     }
+    //escreve o tamanho primeiro
+    arquivo.write(reinterpret_cast<const char*>(&tamanho), sizeof(int));
+    //escreve os dados
     arquivo.write(reinterpret_cast<const char*> (vetor.data()), tamanho * sizeof(int) );
     arquivo.close();
     cout <<"Arquivo " << nomeArquivo <<"criado com sucesso!! ("<< tamanho<< " elementos)" << endl;
