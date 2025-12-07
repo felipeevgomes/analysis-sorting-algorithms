@@ -1,0 +1,5 @@
+TipoBusca,TipoValor,Tempo_ms,Comparacoes,Encontrado,TempoOrdenacao_ms
+Sequencial,Existente,0.0000,21473,1,0
+Sequencial,Inexistente,1.4810,100000,0,0
+Binaria,Existente,0.0000,25,1,56.57
+Binaria,Inexistente,0.0000,34,0,56.57
