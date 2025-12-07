@@ -1,25 +1,37 @@
 Algoritmo,Arquivo,Tempo_ms,Comparacoes,Trocas
-Selection Sort,pequeno-aleatorios.bin,5.53,499500,989
-Insertion Sort,pequeno-aleatorios.bin,4.53,245594,244603
-Bubble Sort,pequeno-aleatorios.bin,13.11,499500,244603
-Bubble Sort Otimizado,pequeno-aleatorios.bin,14.55,497222,244603
-Selection Sort,pequeno-crescente.bin,5.03,499500,0
+Selection Sort,pequeno-aleatorios.bin,5.00,499500,989
+Insertion Sort,pequeno-aleatorios.bin,3.00,245594,244603
+Bubble Sort,pequeno-aleatorios.bin,9.01,499500,244603
+Bubble Sort Otimizado,pequeno-aleatorios.bin,8.00,497222,244603
+Selection Sort,pequeno-crescente.bin,3.00,499500,0
 Insertion Sort,pequeno-crescente.bin,0.00,999,0
-Bubble Sort,pequeno-crescente.bin,5.00,499500,0
+Bubble Sort,pequeno-crescente.bin,4.01,499500,0
 Bubble Sort Otimizado,pequeno-crescente.bin,0.00,999,0
-Selection Sort,pequeno-descresente.bin,3.51,499500,500
-Insertion Sort,pequeno-descresente.bin,8.10,499500,499500
-Bubble Sort,pequeno-descresente.bin,17.08,499500,499500
-Bubble Sort Otimizado,pequeno-descresente.bin,19.77,499500,499500
-Selection Sort,medio-aleatorios.bin,460.21,49995000,9993
-Insertion Sort,medio-aleatorios.bin,347.96,25098521,25088529
-Bubble Sort,medio-aleatorios.bin,1083.77,49995000,25088529
-Bubble Sort Otimizado,medio-aleatorios.bin,1091.92,49987374,25088529
-Selection Sort,medio-crescente.bin,431.20,49995000,0
-Insertion Sort,medio-crescente.bin,1.01,9999,0
-Bubble Sort,medio-crescente.bin,500.08,49995000,0
-Bubble Sort Otimizado,medio-crescente.bin,1.00,9999,0
-Selection Sort,medio-descresente.bin,465.29,49995000,5000
-Insertion Sort,medio-descresente.bin,717.50,49995000,49995000
-Bubble Sort,medio-descresente.bin,1360.97,49995000,49995000
-Bubble Sort Otimizado,medio-descresente.bin,1525.86,49995000,49995000
+Selection Sort,pequeno-descresente.bin,3.99,499500,500
+Insertion Sort,pequeno-descresente.bin,7.00,499500,499500
+Bubble Sort,pequeno-descresente.bin,16.99,499500,499500
+Bubble Sort Otimizado,pequeno-descresente.bin,11.99,499500,499500
+Selection Sort,medio-aleatorios.bin,396.10,49995000,9993
+Insertion Sort,medio-aleatorios.bin,329.09,25098521,25088529
+Bubble Sort,medio-aleatorios.bin,908.47,49995000,25088529
+Bubble Sort Otimizado,medio-aleatorios.bin,819.73,49987374,25088529
+Selection Sort,medio-crescente.bin,399.09,49995000,0
+Insertion Sort,medio-crescente.bin,0.00,9999,0
+Bubble Sort,medio-crescente.bin,546.66,49995000,0
+Bubble Sort Otimizado,medio-crescente.bin,0.00,9999,0
+Selection Sort,medio-descresente.bin,493.29,49995000,5000
+Insertion Sort,medio-descresente.bin,660.87,49995000,49995000
+Bubble Sort,medio-descresente.bin,1768.07,49995000,49995000
+Bubble Sort Otimizado,medio-descresente.bin,1172.13,49995000,49995000
+Selection Sort,grande-aleatorios.bin,43646.38,4999950000,99986
+Insertion Sort,grande-aleatorios.bin,38126.23,2492481772,2492381783
+Bubble Sort,grande-aleatorios.bin,118616.01,4999950000,2492381783
+Bubble Sort Otimizado,grande-aleatorios.bin,119543.78,4999912872,2492381783
+Selection Sort,grande-crescente.bin,59267.71,4999950000,0
+Insertion Sort,grande-crescente.bin,1.00,99999,0
+Bubble Sort,grande-crescente.bin,42420.43,4999950000,0
+Bubble Sort Otimizado,grande-crescente.bin,1.00,99999,0
+Selection Sort,grande-descresente.bin,43901.00,4999950000,50000
+Insertion Sort,grande-descresente.bin,65154.31,4999950000,4999950000
+Bubble Sort,grande-descresente.bin,195979.61,4999950000,4999950000
+Bubble Sort Otimizado,grande-descresente.bin,127339.18,4999950000,4999950000
