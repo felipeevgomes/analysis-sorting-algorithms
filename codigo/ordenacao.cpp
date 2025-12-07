@@ -138,21 +138,19 @@ void imprimirMetricas(const string& algoritmo, const string& arquivo, const Metr
 
 int main() {
     vector<string> arquivos = {
-        "../dados/pequeno_aleatorio.bin",
-        "../dados/pequeno_crescente.bin",
-        "../dados/pequeno_decrescente.bin",
-        "../dados/medio_aleatorio.bin",
-        "../dados/medio_crescente.bin",
-        "../dados/medio_decrescente.bin",
-        "../dados/grande_aleatorio.bin",
-        "../dados/grande_crescente.bin",
-        "../dados/grande_decrescente.bin"
+        "../dados/pequeno-aleatorios.bin",
+        "../dados/pequeno-crescente.bin",
+        "../dados/pequeno-descresente.bin",
+        "../dados/medio-aleatorios.bin",
+        "../dados/medio-crescente.bin",
+        "../dados/medio-descresente.bin",
+        "../dados/grande-aleatorios.bin",
+        "../dados/grande-crescente.bin",
+        "../dados/grande-descresente.bin"
     };
 
     ofstream resultado("resultados_ordenacao.csv");
     resultado << "Algoritmo,Arquivo,Tempo_ms,Comparacoes,Trocas" << endl;
-    
-    cout << "=== ANÁLISE DE ALGORITMOS DE ORDENAÇÃO ===" << endl << endl;
     cout << left << setw(25) << "ALGORITMO" << " | " 
          << setw(25) << "ARQUIVO" << " | "
          << setw(12) << "TEMPO (ms)" << " | "
@@ -170,7 +168,7 @@ int main() {
         }
         
         // Extrair nome do arquivo sem path
-        size_t pos = arquivoPath.find_last_of('/');
+        size_t pos = arquivoPath.find_last_of("/");
         string nomeArquivo = (pos != string::npos) ? arquivoPath.substr(pos + 1) : arquivoPath;
         
         // Selection Sort
@@ -209,7 +207,6 @@ int main() {
     }
     
     resultado.close();
-    cout << "=== ANÁLISE CONCLUÍDA! ===" << endl;
     cout << "Resultados salvos em: resultados_ordenacao.csv" << endl;
     
     return 0;
