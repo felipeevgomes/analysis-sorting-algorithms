@@ -2,32 +2,21 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Configurar estilo dos gráficos
 sns.set_style("whitegrid")
 plt.rcParams['figure.figsize'] = (12, 6)
 plt.rcParams['font.size'] = 10
 
-# ====================================
-# CARREGAR DADOS
-# ====================================
-print("Carregando dados...")
-# Ajuste dos caminhos para rodar a partir da raiz do projeto
-df_ord = pd.read_csv('codigo/resultados_ordenacao.csv')
-df_busca = pd.read_csv('codigo/resultados_busca.csv')
-
-# Extrair informações do nome do arquivo (ex: pequeno-aleatorios.bin)
+df_ord = pd.read_csv('../codigo/resultados_ordenacao.csv')
+df_busca = pd.read_csv('../codigo/resultados_busca.csv')
 df_ord['Tamanho'] = df_ord['Arquivo'].str.extract(r'(pequeno|medio|grande)')
 df_ord['Cenario'] = df_ord['Arquivo'].str.extract(r'-(aleatorios|crescente|descresente)')
 
-# Padronizar nomes dos cenários
 cenario_map = {
     'aleatorios': 'aleatorio',
     'crescente': 'crescente',
     'descresente': 'decrescente'
 }
 df_ord['Cenario'] = df_ord['Cenario'].map(cenario_map)
-
-# Mapear tamanhos para valores numéricos
 tamanho_map = {'pequeno': 1000, 'medio': 10000, 'grande': 100000}
 df_ord['N'] = df_ord['Tamanho'].map(tamanho_map)
 
@@ -53,7 +42,7 @@ plt.title('Tempo de Execução x Tamanho do Vetor - Cenário Aleatório',
           fontsize=14, fontweight='bold', pad=20)
 plt.legend(fontsize=10, loc='upper left')
 plt.grid(True, alpha=0.3)
-plt.yscale('log')  # Escala logarítmica para melhor visualização
+plt.yscale('log')
 plt.tight_layout()
 plt.savefig('grafico1_tempo_tamanho.png', dpi=300, bbox_inches='tight')
 print("✓ Gráfico salvo: grafico1_tempo_tamanho.png")
@@ -73,8 +62,6 @@ trocas = medio_aleatorio['Trocas']
 cores = ['#FF6B6B', '#4ECDC4']
 
 bars = plt.bar(algoritmos, trocas, color=cores, edgecolor='black', linewidth=1.5)
-
-# Adicionar valores no topo das barras
 for bar in bars:
     height = bar.get_height()
     plt.text(bar.get_x() + bar.get_width()/2., height,
