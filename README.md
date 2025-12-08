@@ -79,10 +79,6 @@ O projeto gera:
 
 Consulte o [README.txt](codigo/README.txt) para instruções detalhadas de compilação e uso.
 
-## 👤 Autor
-
-[SEU NOME] - Algoritmos e Estruturas de Dados
-
 ## 📄 Licença
 
 Este projeto é acadêmico e está disponível para fins educacionais.
